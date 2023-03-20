@@ -55,7 +55,12 @@ For Debian-based Linux distributions like Ubuntu, you can install Docker like th
     sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     docker-compose --version
-Now the tests will be execute on your machine.
+# Run the docker compose file and run the selenium test with maven command like this:
+   docker-compose up -d
+   mvn -Dtest=cucumberOptions.TestRunner  test
+
+  First command will start the docker compose file and create the testcontainer and once docker conatiner created then we will run the second command to execute the test
+it simply execute test on your machine.
 
 you can change the code and target website as per your needs.
 
