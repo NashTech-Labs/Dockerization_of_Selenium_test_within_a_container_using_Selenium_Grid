@@ -1,7 +1,7 @@
 # Dockerization_of_Selenium_test_within_a_container_using_Selenium_Grid
 
 # Introduction
- This template will help you to implement how to run and test their automated Selenium web tests through a Docker container. It is a modern load testing tool,You can use k6 to evaluate your systems’ reliability and performance, catching performance regressions and problems earlier. To make performance testing more efficient, we may utilize metrics, which replicate and display what metrics track and how well a system works in real-world scenarios.
+ This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on BrowserStack.
 # What is the docker, and why do we need to run the test with docker container?
 This is a basic question that almost everyone has, such as why we need and utilize them, therefore let's just define it in one sentence " Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime".
 #  In other words
