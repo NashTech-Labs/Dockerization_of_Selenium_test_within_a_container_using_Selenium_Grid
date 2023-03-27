@@ -23,7 +23,7 @@ public class Hooks extends LaunchBrowsers {
         cap.setCapability("browserVersion", "110.0");
         cap.setCapability("browserName", "chrome");
         cap.setCapability("platformName", "Linux");
-        LaunchBrowsers.driver = new RemoteWebDriver(new URL(" http://172.22.0.3:4444/wd/hub"), cap);
+        LaunchBrowsers.driver = new RemoteWebDriver(new URL(" http://172.18.0.3:4444/wd/hub"), cap);
         LaunchBrowsers.driver.manage().window().maximize();
         LaunchBrowsers.driver.get(baseURL);
         WebDriverWait wait = new WebDriverWait(LaunchBrowsers.driver, Duration.ofSeconds(50));
