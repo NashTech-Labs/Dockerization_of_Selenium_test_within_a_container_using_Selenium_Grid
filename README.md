@@ -1,7 +1,7 @@
 # Dockerization_of_Selenium_test_within_a_container_using_Selenium_Grid
 
 # Introduction
- This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on BrowserStack.
+ This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on docker container.
 # What is the docker, and why do we need to run the test with docker container?
 This is a basic question that almost everyone has, such as why we need and utilize them, therefore let's just define it in one sentence " Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime".
 #  In other words
