@@ -3,6 +3,8 @@ package stepDefinitions;
 import browserDrivers.LaunchBrowsers;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,11 +15,11 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Hooks extends LaunchBrowsers {
+    protected static Logger logger = LogManager.getLogger(Hooks.class);
 
     @Before
     public static void beforeAll() throws MalformedURLException {
-        System.out.println("test execution started");
-
+        logger.info("test execution started");
         System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver_linux64/chromedriver");
         ChromeOptions cap = new ChromeOptions();
         cap.setCapability("browserVersion", "110.0");
@@ -33,6 +35,7 @@ public class Hooks extends LaunchBrowsers {
     @After
     public void afterScenario() {
 
-        System.out.println("test execution complete");
+        logger.info("test execution complete");
+
     }
 }

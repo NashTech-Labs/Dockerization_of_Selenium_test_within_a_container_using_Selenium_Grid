@@ -23,24 +23,24 @@ public class AddProduct extends LaunchBrowsers {
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
-    public void LoginUser() {
+    public void loginUser() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(TestUserName));
         LaunchBrowsers.driver.findElement(TestUserName).sendKeys("standard_user");
         LaunchBrowsers.driver.findElement(TestUserPassword).sendKeys("secret_sauce");
         LaunchBrowsers.driver.findElement(clickOnLoginButton).click();
     }
 
-    public void AddToCart() {
+    public void addToCart() {
         String title = LaunchBrowsers.driver.getTitle();
         System.out.printf(title);
         LaunchBrowsers.driver.findElement(AddToCart).click();
     }
 
-    public void ClickOnCart() {
+    public void clickOnCart() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(GoToCart)).click();
     }
 
-    public void GetExpected() {
+    public void getExpected() {
         String expectedText = wait.until(ExpectedConditions.visibilityOfElementLocated(GetExpected)).getText();
         Assert.assertEquals(expectedText, "Sauce Labs Backpack");
         System.out.printf(expectedText);
