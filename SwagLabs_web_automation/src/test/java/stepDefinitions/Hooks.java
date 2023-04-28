@@ -3,8 +3,6 @@ package stepDefinitions;
 import browserDrivers.LaunchBrowsers;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,9 +11,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class Hooks extends LaunchBrowsers {
-    protected static Logger logger = LogManager.getLogger(Hooks.class);
+    static Logger logger = Logger.getLogger(Hooks.class.getName());
 
     @Before
     public static void beforeAll() throws MalformedURLException {
@@ -25,7 +24,7 @@ public class Hooks extends LaunchBrowsers {
         cap.setCapability("browserVersion", "110.0");
         cap.setCapability("browserName", "chrome");
         cap.setCapability("platformName", "Linux");
-        LaunchBrowsers.driver = new RemoteWebDriver(new URL(" http://172.18.0.3:4444/wd/hub"), cap);
+        LaunchBrowsers.driver = new RemoteWebDriver(new URL(" http://172.23.0.3:4444/wd/hub"), cap);
         LaunchBrowsers.driver.manage().window().maximize();
         LaunchBrowsers.driver.get(baseURL);
         WebDriverWait wait = new WebDriverWait(LaunchBrowsers.driver, Duration.ofSeconds(50));
