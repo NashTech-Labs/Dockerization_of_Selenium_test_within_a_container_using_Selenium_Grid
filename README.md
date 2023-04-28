@@ -1,4 +1,4 @@
-# Dockerization_of_Selenium_test_within_a_container_using_Selenium_Grid
+# Dockerization of Selenium test within a container using Selenium Grid
 
 # Introduction
  This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on docker container.
