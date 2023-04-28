@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Dockerization_of_Selenium_test_within_a_container_using_Selenium_Grid.iml" filepath="$PROJECT_DIR$/.idea/Dockerization_of_Selenium_test_within_a_container_using_Selenium_Grid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SwagLabs_web_automation/SwagLabs_web_automation.iml" filepath="$PROJECT_DIR$/SwagLabs_web_automation/SwagLabs_web_automation.iml" />
-    </modules>
-  </component>
-</project>
