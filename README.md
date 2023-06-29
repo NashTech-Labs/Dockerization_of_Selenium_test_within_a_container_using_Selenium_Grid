@@ -1,8 +1,8 @@
 # Dockerization of Selenium test within a container using Selenium Grid
 
 # Introduction
- This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on docker container.
-# What is the docker, and why do we need to run the test with docker container?
+ This template will help you implement how to run and test their automated Selenium web tests through a Docker container. It is a modern approach to run the test suits on a docker container.
+# What is the docker, and why do we need to run the test with the docker container?
 This is a basic question that almost everyone has, such as why we need and utilize them, therefore let's just define it in one sentence " Docker is a software platform that allows you to build, test, and deploy applications quickly. Docker packages software into standardized units called containers that have everything the software needs to run including libraries, system tools, code, and runtime".
 #  In other words
  Tracks how well a system works in real-world scenarios. 
@@ -10,7 +10,7 @@ This is a basic question that almost everyone has, such as why we need and utili
 # Technologies Used
 > Programming language - Java
 
-> Automation tool - Selenium,testNg,and cucumber
+> Automation tool - Selenium,TestNG,and cucumber
 
 > IDE - Intellij 
 # Libraries Used
@@ -55,13 +55,13 @@ For Debian-based Linux distributions like Ubuntu, you can install Docker like th
     sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     docker-compose --version
-# Run the docker compose file and run the selenium test with maven command like this:
+# Run the docker-compose file and run the selenium test with the maven command like this:
     docker-compose up -d
     mvn -Dtest=cucumberOptions.TestRunner  test
 
-  First command will start the docker compose file and create the testcontainer and once docker conatiner created then we will run the second command to execute the test
-it simply execute test on your machine.
+  The first command will start the docker-compose file and create the test container and once the docker container created then we will run the second command to execute the test
+it simply executes the test on your machine.
 
 you can change the code and target website as per your needs.
 
-For a better understanding please refer to this blog:- [click here] https://blog.nashtechglobal.com/dockerization-of-selenium-test-within-a-container-using-selenium-grid/
+For a better understanding please refer to this blog:- [click here](https://blog.nashtechglobal.com/dockerization-of-selenium-test-within-a-container-using-selenium-grid/)
