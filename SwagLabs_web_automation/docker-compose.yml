@@ -1,0 +1,21 @@
+# Note: It requires docker-compose version 1.13.0 or more.
+#
+# Usage: docker-compose up -d
+
+version: "3"
+services: # Selenium hub
+  selenium_hub:
+    image: selenium/hub:latest
+    container_name: selenium_hub_test
+    ports:
+      -  "4444:4444"
+
+  chrome:
+    image: selenium/standalone-chrome
+    volumes:
+      -  /dev/shm:/dev/shm
+    depends_on:
+      - selenium_hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
